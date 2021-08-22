@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Stickers App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-text">
+          <p>
+            Formulario para compra de <br />
+            <strong>Pacotes Stickers</strong>
+          </p>
+        </div>
+        <div class="header-image">
+          <img src="./images/Shape.png" alt="Logo" />
+        </div>
+      </header>
+      <main>
+        <form>
+          <div class="form-group">
+            <label for=" options" class="form-label">Quais Stikers?</label>
+            <ul id="options" class="options">
+              <li>
+                <label class="custom-checkbox">
+                  React
+                  <input type="checkbox" id="react" />
+                  <span class="mark"></span>
+                </label>
+              </li>
+              <li>
+                <label class="custom-checkbox">
+                  Vue
+                  <input type="checkbox" id="vue" />
+                  <span class="mark"></span>
+                </label>
+              </li>
+              <li>
+                <label class="custom-checkbox">
+                  Angular
+                  <input type="checkbox" id="angular" />
+                  <span class="mark"></span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Quantos stickers de cada?</label>
+            <div class="form-qt">
+              <button class="qt-btn" id="btn-decrease">-</button>
+              <input type="text" id="input-qt" class="input-qt" readonly />
+              <button class="qt-btn" id="btn-increase">+</button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for=" options">Observações</label>
+            <textarea
+              class="observations"
+              id="observations"
+              rows="10"
+              cols="30"
+            >
+            </textarea>
+          </div>
+          <div class="form-footer">
+            <p class="hidden" id="message"></p>
+            <button type="submit" id="btn-submit" class="btn-primary">
+              ENVIAR
+            </button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
